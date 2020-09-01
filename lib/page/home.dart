@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.black,
       body: GestureDetector(
         child: Stack(
           children: <Widget>[
@@ -28,9 +29,8 @@ class _HomeState extends State<Home> {
             ),
             Center(
               child: Container(
-                width: screenSize.width-100,
-                color: Colors.black,
-                child: Text(words, style: TextStyle(color: Colors.white, fontSize: 18),),
+                color: Colors.black45,
+                child: Text(words, style: TextStyle(color: Colors.white, fontSize: 24),textAlign: TextAlign.center,),
               ),
             ),
           ],
